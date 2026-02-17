@@ -14,9 +14,9 @@ The intelligence was produced by **Graphika Technologies Inc.** and describes a 
 
 ## Data dictionary
 
-A **data dictionary(DATA_DICTIONARY.md)** documents the JSON structure: bundle layout, common fields, object types (`identity`, `report`, `attack-pattern`, `domain-name`, `ipv4-addr`, `channel`, `location`, `incident`, `intrusion-set`, `relationship`, etc.), OpenCTI extensions, and ID formats. Use it when parsing, querying, or mapping the STIX bundles.
+A **data dictionary(data_dictionary.md)** documents the JSON structure: bundle layout, common fields, object types (`identity`, `report`, `attack-pattern`, `domain-name`, `ipv4-addr`, `channel`, `location`, `incident`, `intrusion-set`, `relationship`, etc.), OpenCTI extensions, and ID formats. Use it when parsing, querying, or mapping the STIX bundles.
 
-[DATA_DICTIONARY](https://www.notion.so/DATA_DICTIONARY-306128f3172a804288acd59d55e39956?pvs=21)
+
 
 ## References
 
