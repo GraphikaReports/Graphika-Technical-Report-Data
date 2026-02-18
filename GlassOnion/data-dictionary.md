@@ -197,7 +197,7 @@ Knowned threat actor or actor group (STIX 2.1)
 
 ## File-specific notes
 
-- **Glass Onion_STIX_bundle_OpenCTI Export.json**: Pretty-printed; contains the main report plus identities, attack-patterns, domain-names, channels, locations, incidents, intrusion-sets, ipv4-addrs, relationships, media-content, and narratives. No custom extensions on observables in this file.
-- **Glass Onion _ STIX_bundle.json**: Single-line bundle; includes incidents and ipv4-addr with **extensions** that add a `domain_name` array to IP objects. Same STIX 2.1 + OpenCTI conventions otherwise.
+- **Glass_Onion_STIX_bundle_OpenCTI_Export.json**: Pretty-printed; contains the main report plus identities, attack-patterns, domain-names, channels, locations, incidents, intrusion-sets, ipv4-addrs, relationships, media-content, and narratives. No custom extensions on observables in this file.
+- **Glass_Onion_STIX_bundle.json**: Single-line bundle; includes incidents and ipv4-addr with **extensions** that add a `domain_name` array to IP objects. Same STIX 2.1 + OpenCTI conventions otherwise.
 
 For the authoritative STIX 2.1 schema, see [OASIS CTI TC](https://docs.oasis-open.org/cti/stix/v2.1/stix-v2.1.html).
