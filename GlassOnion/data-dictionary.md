@@ -71,7 +71,7 @@ Tactic or technique.
 | Field | Type | Description |
 | --- | --- | --- |
 | `name` | string | e.g. “Develop Inauthentic News Articles”, “Bots Amplify via Automated Forwarding and Reposting”. |
-| `x_mitre_id` | string | Technique ID (e.g. `"[T0098.002](https://github.com/DISARMFoundation/DISARMframeworks/blob/main/generated_pages/techniques/T0098.002.md)"`, `"[T0049.003](https://github.com/DISARMFoundation/DISARMframeworks/blob/main/generated_pages/techniques/T0049.003.md)"`).  |
+| `x_mitre_id` | string | Technique ID (e.g. [T0098.002](https://github.com/DISARMFoundation/DISARMframeworks/blob/main/generated_pages/techniques/T0098.002.md), [T0049.003](https://github.com/DISARMFoundation/DISARMframeworks/blob/main/generated_pages/techniques/T0049.003.md)).  |
 | `external_references` | array | `source_name` (e.g. `"disarm"`), `external_id`. |
 
 ---
