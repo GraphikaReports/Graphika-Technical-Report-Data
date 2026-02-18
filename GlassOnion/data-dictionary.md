@@ -1,4 +1,4 @@
-# DATA_DICTIONARY
+# DATA DICTIONARY
 
 # Data Dictionary — Glass Onion STIX JSON
 
@@ -71,7 +71,7 @@ Tactic or technique.
 | Field | Type | Description |
 | --- | --- | --- |
 | `name` | string | e.g. “Develop Inauthentic News Articles”, “Bots Amplify via Automated Forwarding and Reposting”. |
-| `x_mitre_id` | string | Technique ID (e.g. `"T0098.002"`, `"T0049.003"`).  |
+| `x_mitre_id` | string | Technique ID (e.g. `"[T0098.002](https://github.com/DISARMFoundation/DISARMframeworks/blob/main/generated_pages/techniques/T0098.002.md)"`, `"[T0049.003](https://github.com/DISARMFoundation/DISARMframeworks/blob/main/generated_pages/techniques/T0049.003.md)"`).  |
 | `external_references` | array | `source_name` (e.g. `"disarm"`), `external_id`. |
 
 ---
@@ -138,7 +138,7 @@ Some incidents may have an `extensions` object (e.g. OpenCTI toplevel-property-
 
 ### `intrusion-set`
 
-Named threat actor or campaign.
+Named grouped set of adversarial behaviors and resources with common properties. 
 
 | Field | Type | Description |
 | --- | --- | --- |
@@ -156,6 +156,7 @@ Links two STIX objects.
 | `source_ref` | string | `id` of the source object. |
 | `target_ref` | string | `id` of the target object. |
 | `lang` | string | Optional language (e.g. `"en"`). |
+| `start_time` | string | ISO 8601 date of observed start of relationship |
 
 ---
 
@@ -166,12 +167,31 @@ STIX 2.1 object for a piece of media (e.g. article, post) referenced in the rep
 | Field | Type | Description |
 | --- | --- | --- |
 | (varies) | — | Structure follows STIX 2.1 media-content; may include URLs, content references. |
+| `url` | string | URL hosting content |
+| `content` | string | Content in article or at other URL |
+| `publication_date` | string | ISO 8601 date |
+| `x_opencti_created_by_ref` | string | `id` of the creating identity. |
 
 ---
 
 ### `narrative`
 
 Structured narrative or storyline object (STIX 2.1)
+
+| Field | Type | Description |
+| --- | --- | --- |
+| `name` | string | Descriptive name for narrative |
+
+---
+
+### `threat-actor`
+
+Knowned threat actor or actor group (STIX 2.1)
+
+| Field | Type | Description |
+| --- | --- | --- |
+| `name` | string | Name for threat actor |
+| `threat_actor_group` | string | Name for group of actors |
 
 ---
 
